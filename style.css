@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #00afef;
+    flex-direction: column;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+}
+
+*::selection {
+    background-color: #00afef5b;
+}
+
+body {
+    display: flex;
+    background-color: #00afef;
+}
+
+header {
+    display: flex;
+    margin-top: 1.5em;
+}
+
+header>img {
+    width: 6em;
+    align-self: center;
+}
+
+main {
+    display: flex;
+    min-height: 82vh;
+}
+
+main>.links {
+    gap: 2em;
+    display: flex;
+    margin-top: 3.5em;
+}
+
+main>.links>.link {
+    width: 20em;
+    padding: 1em;
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+    flex-direction: row;
+    text-decoration: none;
+    transform: scale(0.95);
+    transition-duration: 0.2s;
+    background-color: #FFFFFF;
+    transition-timing-function: linear;
+    box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+main>.links>.link:hover {
+    transform: scale(1);
+    box-shadow: 0px 4px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+main>.links>.link>.icon {
+    width: 2em;
+}
+
+main>.links>.link>.text {
+    margin: auto;
+    font-size: 1.5em;
+    font-weight: bold;
+    align-self: center;
+}
+
+footer {
+    display: flex;
+    padding: 1.5em;
+    background-color: #FFFFFF;
+}
+
+footer>.description {
+    font-size: 0.8em;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 330px) {
+    main>.links>.link {
+        width: 90%;
+    }
+
+    main>.links>.link>.text {
+        font-size: 1.3em;
+    }
+}
