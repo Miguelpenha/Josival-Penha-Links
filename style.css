@@ -33,9 +33,9 @@ main {
 }
 
 main>.links {
-    gap: 2em;
+    gap: 1em;
     display: flex;
-    margin-top: 3.5em;
+    margin-top: 2em;
 }
 
 main>.links>.link {
